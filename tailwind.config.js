@@ -7,7 +7,7 @@ export default {
     },
     extend: {
       colors: {
-        mainColor: "#057FE4",
+        headerColor: "#057FE4",
       },
     },
   },

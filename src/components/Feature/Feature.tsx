@@ -56,6 +56,7 @@ const Feature: React.FC = () => {
                 {card.text}
               </p>
 
+              {/* TODO: Make links functional */}
               <a href="#" className="flex items-center gap-3 text-blue-500">
                 <span>{card.link}</span>
                 <img loading="lazy" src={arrow} alt="arrow" />

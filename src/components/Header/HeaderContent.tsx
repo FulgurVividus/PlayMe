@@ -10,7 +10,7 @@ import headerRightImage from "../../assets/images/header-images/headerRightImage
 const HeaderContent: React.FC = () => {
   return (
     <>
-      <header className="mt-[70px] pb-[84px] md:pb-[109px] flex items-center justify-between max-w-[1200px] mx-auto relative">
+      <header className="mt-[70px] pb-[84px] md:pb-[109px] flex items-center justify-between custom-container relative">
         {/* Main div for text content on the left */}
         <div>
           {/* 1: First three lines */}
@@ -101,7 +101,7 @@ const HeaderContent: React.FC = () => {
             loading="lazy"
             src={headerRightImage}
             alt="headerRightImage"
-            className="absolute bottom-0 right-0 select-none hidden md:block"
+            className="absolute bottom-0 right-0 select-none hidden lg:block"
           />
         </div>
       </header>

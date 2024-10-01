@@ -12,4 +12,8 @@
   .headerLinkBars {
     @apply flex justify-between items-center gap-[50px] md:gap-[16px] py-[19px] px-[26px] md:py-[17px] md:px-[24px] bg-[#F7F9FF] rounded-2xl max-w-full md:max-w-fit;
   }
+
+  .custom-container {
+    @apply max-w-[1200px] mx-auto;
+  }
 }

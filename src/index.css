@@ -21,6 +21,10 @@
     @apply flex flex-col items-center text-center gap-[5px];
   }
 
+  .stats-card-number {
+    @apply font-black text-[85px] leading-[104px];
+  }
+
   .stats-card-text {
     @apply text-[#5C5E6A] font-black text-base leading-[24px];
   }

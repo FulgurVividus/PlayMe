@@ -17,6 +17,14 @@
     @apply max-w-[1200px] mx-auto;
   }
 
+  .stats-card {
+    @apply flex flex-col items-center text-center gap-[5px];
+  }
+
+  .stats-card-text {
+    @apply text-[#5C5E6A] font-black text-base leading-[24px];
+  }
+
   /* hide scrollbar */
   html {
     overflow: scroll;

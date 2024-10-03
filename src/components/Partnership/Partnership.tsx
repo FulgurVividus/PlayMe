@@ -1,6 +1,7 @@
 import React from "react";
 
 import partnershipImage from "../../assets/images/partnership-images/partnershipImage.png";
+import partnershipImageSmall from "../../assets/images/partnership-images/partnershipImageSmall.png";
 
 const texts: string[] = [
   "Удобство использования",
@@ -60,7 +61,13 @@ const Partnership: React.FC = () => {
               loading="lazy"
               src={partnershipImage}
               alt="partnershipImage"
-              className="lg:absolute lg:bottom-0 lg:right-0 select-none"
+              className="lg:absolute lg:bottom-0 lg:right-0 select-none h-full hidden lg:block"
+            />
+            <img
+              loading="lazy"
+              src={partnershipImageSmall}
+              alt="partnershipImageSmall"
+              className="lg:absolute lg:bottom-0 lg:right-0 select-none h-full lg:hidden"
             />
           </div>
         </section>

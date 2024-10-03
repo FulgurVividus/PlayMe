@@ -4,6 +4,7 @@ import Feature from "./components/Feature/Feature";
 import MainProductDescription from "./components/MainProductDescription/MainProductDescription";
 import Stats from "./components/Stats/Stats";
 import Partnership from "./components/Partnership/Partnership";
+import FeatureList from "./components/FeatureList/FeatureList";
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
         <MainProductDescription />
         <Stats />
         <Partnership />
+        <FeatureList />
       </div>
     </>
   );

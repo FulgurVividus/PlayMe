@@ -38,42 +38,44 @@ const cards: {
 const Feature: React.FC = () => {
   return (
     <>
-      <section className="bg-featureColor mt-[80px] rounded-[40px] custom-container">
-        <p className="text-white text-[28px] leading-[40px] font-bold text-center pt-8 lg:pt-[46px]">
-          Разработано с учетом ваших потребностей
-        </p>
+      <section className="px-7">
+        <section className="bg-featureColor mt-[80px] rounded-[40px] custom-container">
+          <p className="text-white text-[28px] leading-[40px] font-bold text-center pt-8 lg:pt-[46px]">
+            Разработано с учетом ваших потребностей
+          </p>
 
-        {/* Cards */}
-        <ul className="flex flex-col lg:flex-row mt-8 lg:mt-[17px] gap-[15px] px-[15px] lg:px-[120px] pb-12">
-          {cards.map((card) => (
-            <li
-              key={card.id}
-              className="bg-white h-[336px] rounded-[12px] p-[25px] lg:p-[24px] flex flex-col gap-4 items-center w-full"
-            >
-              <img
-                loading="lazy"
-                src={card.img}
-                alt="image"
-                className="select-none"
-              />
-              <p className="font-black text-lg text-center">{card.title}</p>
-              <p className="text-center font-inter text-[#5c5e6a] flex-grow">
-                {card.text}
-              </p>
-
-              {/* TODO: Make links functional */}
-              <a href="#" className="flex items-center gap-3 text-blue-500">
-                <span>{card.link}</span>
+          {/* Cards */}
+          <ul className="flex flex-col lg:flex-row mt-8 lg:mt-[17px] gap-[15px] px-[15px] lg:px-[120px] pb-12">
+            {cards.map((card) => (
+              <li
+                key={card.id}
+                className="bg-white h-[336px] rounded-[12px] p-[25px] lg:p-[24px] flex flex-col gap-4 items-center w-full"
+              >
                 <img
                   loading="lazy"
-                  src={arrow}
-                  alt="arrow"
+                  src={card.img}
+                  alt="image"
                   className="select-none"
                 />
-              </a>
-            </li>
-          ))}
-        </ul>
+                <p className="font-black text-lg text-center">{card.title}</p>
+                <p className="text-center font-inter text-[#5c5e6a] flex-grow">
+                  {card.text}
+                </p>
+
+                {/* TODO: Make links functional */}
+                <a href="#" className="flex items-center gap-3 text-blue-500">
+                  <span>{card.link}</span>
+                  <img
+                    loading="lazy"
+                    src={arrow}
+                    alt="arrow"
+                    className="select-none"
+                  />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
       </section>
     </>
   );

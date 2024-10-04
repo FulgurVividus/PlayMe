@@ -42,7 +42,7 @@ const MainProductDescription: React.FC = () => {
               {leftSideTexts.map((text, index) => (
                 <li
                   key={index}
-                  className="font-inter font-medium text-[20px] text-[#5C5E6A]"
+                  className="font-inter font-medium text-[20px] text-[#5C5E6A] text-balance"
                 >
                   {text}
                 </li>

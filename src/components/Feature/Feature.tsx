@@ -49,7 +49,7 @@ const Feature: React.FC = () => {
             {cards.map((card) => (
               <li
                 key={card.id}
-                className="bg-white h-[336px] rounded-[12px] p-[25px] lg:p-[24px] flex flex-col gap-4 items-center w-full"
+                className="bg-white rounded-[12px] p-[25px] lg:p-[24px] flex flex-col gap-4 items-center w-full h-auto"
               >
                 <img
                   loading="lazy"
@@ -58,7 +58,7 @@ const Feature: React.FC = () => {
                   className="select-none"
                 />
                 <p className="font-black text-lg text-center">{card.title}</p>
-                <p className="text-center font-inter text-[#5c5e6a] flex-grow">
+                <p className="text-center font-inter text-[#5c5e6a] flex-grow text-balance">
                   {card.text}
                 </p>
 

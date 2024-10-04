@@ -145,6 +145,7 @@ const FeatureList: React.FC = () => {
                       loading="lazy"
                       src={upperCard.img}
                       alt={upperCard.img}
+                      className="select-none"
                     />
                     <p className="text-[#333333] text-2xl font-black leading-[32px] mt-[14px]">
                       {upperCard.title}
@@ -177,6 +178,7 @@ const FeatureList: React.FC = () => {
                       loading="lazy"
                       src={lowerCard.img}
                       alt={lowerCard.img}
+                      className="select-none"
                     />
                     <p className="text-[#333333] text-2xl font-black leading-[32px] mt-[14px]">
                       {lowerCard.title}

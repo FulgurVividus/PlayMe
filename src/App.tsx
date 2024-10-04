@@ -6,6 +6,7 @@ import Stats from "./components/Stats/Stats";
 import Partnership from "./components/Partnership/Partnership";
 import FeatureList from "./components/FeatureList/FeatureList";
 import CallToAction from "./components/CallToAction/CallToAction";
+import Footer from "./components/Footer/Footer";
 
 const App: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <Partnership />
         <FeatureList />
         <CallToAction />
+        <Footer />
       </div>
     </>
   );

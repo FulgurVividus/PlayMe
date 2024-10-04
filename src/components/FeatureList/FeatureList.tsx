@@ -145,6 +145,7 @@ const FeatureList: React.FC = () => {
                       loading="lazy"
                       src={upperCard.img}
                       alt={upperCard.img}
+                      title="image"
                       className="select-none"
                     />
                     <p className="text-[#333333] text-2xl font-black leading-[32px] mt-[14px]">
@@ -154,7 +155,7 @@ const FeatureList: React.FC = () => {
 
                   {upperCard.bulletPoints.map((text, index) => (
                     <div key={index} className="flex items-center gap-[5px]">
-                      <img loading="lazy" src={tick} alt="tick" />
+                      <img loading="lazy" src={tick} alt="tick" title="image" />
                       <p className="text-base text-[#000000] font-black leading-[28px]">
                         {text}
                       </p>
@@ -178,6 +179,7 @@ const FeatureList: React.FC = () => {
                       loading="lazy"
                       src={lowerCard.img}
                       alt={lowerCard.img}
+                      title="image"
                       className="select-none"
                     />
                     <p className="text-[#333333] text-2xl font-black leading-[32px] mt-[14px]">
@@ -187,7 +189,7 @@ const FeatureList: React.FC = () => {
 
                   {lowerCard.bulletPoints.map((text, index) => (
                     <div key={index} className="flex items-center gap-[5px]">
-                      <img loading="lazy" src={tick} alt="tick" />
+                      <img loading="lazy" src={tick} alt="tick" title="image" />
                       <p className="text-base text-[#000000] font-black leading-[28px]">
                         {text}
                       </p>

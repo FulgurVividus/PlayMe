@@ -30,6 +30,7 @@ const HeaderContent: React.FC = () => {
                 loading="lazy"
                 src={stick}
                 alt="stick"
+                title="image"
                 className="absolute left-[1.12px] bottom-[1.12px] md:left-[2.1px] md:bottom-[2.1px]"
               />
             </div>
@@ -48,39 +49,42 @@ const HeaderContent: React.FC = () => {
                 loading="lazy"
                 src={imageHeader1}
                 alt="imageHeader1"
+                title="image"
                 className="hidden md:block"
               />
               <span className="hidden md:block">
                 Я хочу использовать Playme для своего детскогосадика
               </span>
               <span className="md:hidden">Я хочу использовать PLAYME</span>
-              <img loading="lazy" src={arrow} alt="arrow" />
+              <img loading="lazy" src={arrow} alt="arrow" title="image" />
             </a>
             <a href="#" className="headerLinkBars">
               <img
                 loading="lazy"
                 src={imageHeader2}
                 alt="imageHeader2"
+                title="image"
                 className="hidden md:block"
               />
               <span className="hidden md:block">
                 Я уже использую Playme для своего детскогосадика
               </span>
               <span className="md:hidden">Я уже использую PALYME</span>
-              <img loading="lazy" src={arrow} alt="arrow" />
+              <img loading="lazy" title="image" src={arrow} alt="arrow" />
             </a>
             <a href="#" className="headerLinkBars">
               <img
                 loading="lazy"
                 src={imageHeader3}
                 alt="imageHeader3"
+                title="image"
                 className="hidden md:block"
               />
               <span className="hidden md:block">
                 Я родитель и хочу использовать Playme
               </span>
               <span className="md:hidden">Я родитель или опекун</span>
-              <img loading="lazy" src={arrow} alt="arrow" />
+              <img loading="lazy" src={arrow} alt="arrow" title="image" />
             </a>
           </div>
 
@@ -101,6 +105,7 @@ const HeaderContent: React.FC = () => {
             loading="lazy"
             src={headerRightImage}
             alt="headerRightImage"
+            title="image"
             className="absolute bottom-0 right-0 select-none hidden lg:block"
           />
         </div>

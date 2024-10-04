@@ -20,6 +20,7 @@ const Footer: React.FC = () => {
               loading="lazy"
               src={footerLogo}
               alt="footerLogo"
+              title="image"
               className="w-[200px] h-[60px] select-none"
             />
             <div className="bg-[#d0d0d0] h-[1px] my-1 w-full rounded-sm block lg:hidden"></div>
@@ -33,6 +34,7 @@ const Footer: React.FC = () => {
                   loading="lazy"
                   src={appStore}
                   alt="AppStore"
+                  title="image"
                   className="w-[113px] h-[32px] lg:w-[123px] lg:h-[35px] select-none"
                 />
               </a>
@@ -44,6 +46,7 @@ const Footer: React.FC = () => {
                   loading="lazy"
                   src={playMarket}
                   alt="PlayMarket"
+                  title="image"
                   className="w-[113px] h-[32px] lg:w-[123px] lg:h-[35px] select-none"
                 />
               </a>
@@ -56,6 +59,7 @@ const Footer: React.FC = () => {
                   loading="lazy"
                   src={linkedIn}
                   alt="telegram"
+                  title="image"
                   className="select-none"
                 />
               </a>
@@ -67,6 +71,7 @@ const Footer: React.FC = () => {
                   loading="lazy"
                   src={instagram}
                   alt="instagram"
+                  title="image"
                   className="select-none"
                 />
               </a>

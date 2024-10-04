@@ -61,12 +61,14 @@ const Partnership: React.FC = () => {
               loading="lazy"
               src={partnershipImage}
               alt="partnershipImage"
+              title="image"
               className="lg:absolute lg:bottom-0 lg:right-0 select-none h-full hidden lg:block"
             />
             <img
               loading="lazy"
               src={partnershipImageSmall}
               alt="partnershipImageSmall"
+              title="image"
               className="lg:absolute lg:bottom-0 lg:right-0 select-none h-full lg:hidden"
             />
           </div>

@@ -57,7 +57,7 @@ const MainProductDescription: React.FC = () => {
               <span className="font-inter text-[17px] leading-[25px] font-medium text-[#057FE4]">
                 Протестировать демо версию
               </span>
-              <img src={arrow} alt="arrow" />
+              <img src={arrow} alt="arrow" title="image" />
             </a>
           </div>
 
@@ -67,6 +67,7 @@ const MainProductDescription: React.FC = () => {
               loading="lazy"
               src={mainProductDescrImage}
               alt="mainProductDescrImage"
+              title="image"
               className="hidden xl:block absolute bottom-0 right-0 select-none h-fit"
             />
           </div>

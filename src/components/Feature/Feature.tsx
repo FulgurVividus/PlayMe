@@ -55,6 +55,7 @@ const Feature: React.FC = () => {
                   loading="lazy"
                   src={card.img}
                   alt="image"
+                  title="image"
                   className="select-none"
                 />
                 <p className="font-black text-lg text-center">{card.title}</p>
@@ -69,6 +70,7 @@ const Feature: React.FC = () => {
                     loading="lazy"
                     src={arrow}
                     alt="arrow"
+                    title="image"
                     className="select-none"
                   />
                 </a>

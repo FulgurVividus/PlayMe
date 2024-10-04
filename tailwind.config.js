@@ -9,6 +9,7 @@ export default {
       colors: {
         headerColor: "#057FE4",
         featureColor: "#057FE4",
+        callToActionColor: "#F7F9FB",
       },
     },
   },

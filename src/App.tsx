@@ -5,6 +5,7 @@ import MainProductDescription from "./components/MainProductDescription/MainProd
 import Stats from "./components/Stats/Stats";
 import Partnership from "./components/Partnership/Partnership";
 import FeatureList from "./components/FeatureList/FeatureList";
+import CallToAction from "./components/CallToAction/CallToAction";
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
         <Stats />
         <Partnership />
         <FeatureList />
+        <CallToAction />
       </div>
     </>
   );

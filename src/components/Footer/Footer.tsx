@@ -3,7 +3,7 @@ import React from "react";
 import footerLogo from "../../assets/images/footer-images/footerLogo.png";
 import appStore from "../../assets/images/footer-images/AppStore.png";
 import playMarket from "../../assets/images/footer-images/PlayMarket.png";
-import linkedIn from "../../assets/images/footer-images/LinkedIn.png";
+import telegram from "../../assets/images/footer-images/telegramBg.png";
 import instagram from "../../assets/images/footer-images/Instagram.png";
 
 const Footer: React.FC = () => {
@@ -54,10 +54,10 @@ const Footer: React.FC = () => {
 
             <div className="flex items-center gap-x-2.5">
               <a href="https://t.me/playmeedu" target="_blank">
-                {/* Change image */}
+                {/* TODO: Change image */}
                 <img
                   loading="lazy"
-                  src={linkedIn}
+                  src={telegram}
                   alt="telegram"
                   title="image"
                   className="select-none"

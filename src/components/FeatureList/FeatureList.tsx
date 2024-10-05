@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+
+import { motion, useInView, useAnimation } from "framer-motion";
 
 import upper1 from "../../assets/images/featureList-images/upper1.png";
 import upper2 from "../../assets/images/featureList-images/upper2.png";
@@ -123,83 +125,121 @@ const lowerCards: {
 ];
 
 const FeatureList: React.FC = () => {
+  const ref = useRef<HTMLElement | null>(null);
+  const isInView = useInView(ref, { once: false });
+  const mainControls = useAnimation();
+
+  useEffect(
+    function () {
+      if (isInView) {
+        mainControls.start("visible");
+      } else {
+        mainControls.start("hidden");
+      }
+    },
+    [isInView]
+  );
+
   return (
     <>
-      <section className="mt-12 lg:mt-[104px] custom-container flex flex-col gap-y-2 lg:gap-y-8 px-[28px] lg:px-0 lg:w-[1160px]">
-        <h3 className="text-center text-[35px] lg:text-[40px] leading-[60px] font-black">
-          Все что вам нужно для работы вашего детского сада
-        </h3>
+      <section
+        ref={ref}
+        className="mt-12 lg:mt-[104px] custom-container flex flex-col gap-y-2 lg:gap-y-8 px-[28px] lg:px-0 lg:w-[1160px]"
+      >
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate={mainControls}
+          transition={{ duration: 0.6, delay: 0.35 }}
+        >
+          <h3 className="text-center text-[35px] lg:text-[40px] leading-[60px] font-black">
+            Все что вам нужно для работы вашего детского сада
+          </h3>
 
-        {/* Main div for cards */}
-        <div className="shadow-md shadow-gray-500 rounded-[20px] flex flex-col justify-center">
-          {/* Upper cards */}
-          <div className="mx-[27px] lg:mx-[30px] pt-[42px] lg:pt-[34px]">
-            <ul className="flex flex-col lg:flex-row justify-between">
-              {upperCards.map((upperCard) => (
-                <li
-                  key={upperCard.id}
-                  className="mt-[31px] lg:mt-[0] min-w-[200px] lg:min-w-[250px] h-auto"
-                >
-                  <div className="mb-2 lg:mb-[7px]">
-                    <img
-                      loading="lazy"
-                      src={upperCard.img}
-                      alt={upperCard.img}
-                      title="image"
-                      className="select-none"
-                    />
-                    <p className="text-[#333333] text-2xl font-black leading-[32px] mt-[14px]">
-                      {upperCard.title}
-                    </p>
-                  </div>
-
-                  {upperCard.bulletPoints.map((text, index) => (
-                    <div key={index} className="flex items-center gap-[5px]">
-                      <img loading="lazy" src={tick} alt="tick" title="image" />
-                      <p className="text-base text-[#000000] font-black leading-[28px]">
-                        {text}
+          {/* Main div for cards */}
+          <div className="shadow-md shadow-gray-500 rounded-[20px] flex flex-col justify-center">
+            {/* Upper cards */}
+            <div className="mx-[27px] lg:mx-[30px] pt-[42px] lg:pt-[34px]">
+              <ul className="flex flex-col lg:flex-row justify-between">
+                {upperCards.map((upperCard) => (
+                  <li
+                    key={upperCard.id}
+                    className="mt-[31px] lg:mt-[0] min-w-[200px] lg:min-w-[250px] h-auto"
+                  >
+                    <div className="mb-2 lg:mb-[7px]">
+                      <img
+                        loading="lazy"
+                        src={upperCard.img}
+                        alt={upperCard.img}
+                        title="image"
+                        className="select-none"
+                      />
+                      <p className="text-[#333333] text-2xl font-black leading-[32px] mt-[14px]">
+                        {upperCard.title}
                       </p>
                     </div>
-                  ))}
-                </li>
-              ))}
-            </ul>
-          </div>
 
-          {/* Lower cards */}
-          <div className="mx-auto px-[27px] lg:px-0 mt-[0px] lg:mt-[94px] pb-[23px] lg:pb-[113px]">
-            <ul className="flex flex-col lg:flex-row justify-evenly">
-              {lowerCards.map((lowerCard) => (
-                <li
-                  key={lowerCard.id}
-                  className="mt-[31px] lg:mt-[0] min-w-[200px] lg:min-w-[250px] h-auto"
-                >
-                  <div className="mb-2 lg:mb-[7px]">
-                    <img
-                      loading="lazy"
-                      src={lowerCard.img}
-                      alt={lowerCard.img}
-                      title="image"
-                      className="select-none"
-                    />
-                    <p className="text-[#333333] text-2xl font-black leading-[32px] mt-[14px]">
-                      {lowerCard.title}
-                    </p>
-                  </div>
+                    {upperCard.bulletPoints.map((text, index) => (
+                      <div key={index} className="flex items-center gap-[5px]">
+                        <img
+                          loading="lazy"
+                          src={tick}
+                          alt="tick"
+                          title="image"
+                        />
+                        <p className="text-base text-[#000000] font-black leading-[28px]">
+                          {text}
+                        </p>
+                      </div>
+                    ))}
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-                  {lowerCard.bulletPoints.map((text, index) => (
-                    <div key={index} className="flex items-center gap-[5px]">
-                      <img loading="lazy" src={tick} alt="tick" title="image" />
-                      <p className="text-base text-[#000000] font-black leading-[28px]">
-                        {text}
+            {/* Lower cards */}
+            <div className="mx-auto px-[27px] lg:px-0 mt-[0px] lg:mt-[94px] pb-[23px] lg:pb-[113px]">
+              <ul className="flex flex-col lg:flex-row justify-evenly">
+                {lowerCards.map((lowerCard) => (
+                  <li
+                    key={lowerCard.id}
+                    className="mt-[31px] lg:mt-[0] min-w-[200px] lg:min-w-[250px] h-auto"
+                  >
+                    <div className="mb-2 lg:mb-[7px]">
+                      <img
+                        loading="lazy"
+                        src={lowerCard.img}
+                        alt={lowerCard.img}
+                        title="image"
+                        className="select-none"
+                      />
+                      <p className="text-[#333333] text-2xl font-black leading-[32px] mt-[14px]">
+                        {lowerCard.title}
                       </p>
                     </div>
-                  ))}
-                </li>
-              ))}
-            </ul>
+
+                    {lowerCard.bulletPoints.map((text, index) => (
+                      <div key={index} className="flex items-center gap-[5px]">
+                        <img
+                          loading="lazy"
+                          src={tick}
+                          alt="tick"
+                          title="image"
+                        />
+                        <p className="text-base text-[#000000] font-black leading-[28px]">
+                          {text}
+                        </p>
+                      </div>
+                    ))}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

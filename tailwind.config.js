@@ -10,7 +10,7 @@ export default {
         headerColor: "#057FE4",
         featureColor: "#057FE4",
         callToActionColor: "#F7F9FB",
-        footerColor: "#1E2549",
+        footerColor: "#F7F9FB",
       },
     },
   },

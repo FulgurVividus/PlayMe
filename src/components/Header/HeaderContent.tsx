@@ -15,16 +15,13 @@ const HeaderContent: React.FC = () => {
         <div>
           {/* 1: First three lines */}
           <div>
-            <p className="text-white text-[20px] font-black leading-[28px] text-left mb-[8px]">
-              #1 софт для детскихсадов
-            </p>
-
             <div className="relative">
               <p className="text-white text-[32px] md:text-[60px] font-black leading-[48px] md:leading-[72px]">
-                Всё для вашего
+                Упрощаем управление,
               </p>
               <p className="text-white text-[32px] md:text-[60px] font-black leading-[48px] md:leading-[72px]">
-                Детскогосадика
+                воспитываем лучшее
+                <br /> поколение
               </p>
               <img
                 loading="lazy"
@@ -47,41 +44,13 @@ const HeaderContent: React.FC = () => {
             <a href="#" className="headerLinkBars">
               <img
                 loading="lazy"
-                src={imageHeader1}
-                alt="imageHeader1"
-                title="image"
-                className="hidden md:block"
-              />
-              <span className="hidden md:block">
-                Я хочу использовать Playme для своего детскогосадика
-              </span>
-              <span className="md:hidden">Я хочу использовать PLAYME</span>
-              <img loading="lazy" src={arrow} alt="arrow" title="image" />
-            </a>
-            <a href="#" className="headerLinkBars">
-              <img
-                loading="lazy"
-                src={imageHeader2}
-                alt="imageHeader2"
-                title="image"
-                className="hidden md:block"
-              />
-              <span className="hidden md:block">
-                Я уже использую Playme для своего детскогосадика
-              </span>
-              <span className="md:hidden">Я уже использую PALYME</span>
-              <img loading="lazy" title="image" src={arrow} alt="arrow" />
-            </a>
-            <a href="#" className="headerLinkBars">
-              <img
-                loading="lazy"
                 src={imageHeader3}
                 alt="imageHeader3"
                 title="image"
                 className="hidden md:block"
               />
               <span className="hidden md:block">
-                Я родитель и хочу использовать Playme
+                Я хочу использовать Playme для своего детскогосадика
               </span>
               <span className="md:hidden">Я родитель или опекун</span>
               <img loading="lazy" src={arrow} alt="arrow" title="image" />
@@ -93,8 +62,8 @@ const HeaderContent: React.FC = () => {
             <span className="font-black md:font-medium">
               Уже используете Playme?
             </span>{" "}
-            <a href="#" className="underline">
-              Присоединяйтесь к вашей школе
+            <a href="#" target="_blank" className="underline">
+              Войдите в свой детский сад
             </a>
           </p>
         </div>
@@ -106,7 +75,7 @@ const HeaderContent: React.FC = () => {
             src={headerRightImage}
             alt="headerRightImage"
             title="image"
-            className="absolute bottom-0 right-0 select-none hidden lg:block"
+            className="absolute bottom-0 right-0 select-none hidden lg:block h-full w-fit"
           />
         </div>
       </header>

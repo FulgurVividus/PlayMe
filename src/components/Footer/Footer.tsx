@@ -5,7 +5,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import footerLogo from "../../assets/images/footer-images/footerLogo.png";
 import appStore from "../../assets/images/footer-images/AppStore.png";
 import playMarket from "../../assets/images/footer-images/PlayMarket.png";
-import telegram from "../../assets/images/footer-images/telegramBg.png";
+import telegram from "../../assets/images/footer-images/telegram.png";
 import instagram from "../../assets/images/footer-images/Instagram.png";
 
 const Footer: React.FC = () => {

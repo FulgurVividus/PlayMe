@@ -74,7 +74,13 @@ const Partnership: React.FC = () => {
               <div className="mt-7 lg:mt-[108px] mb-8 lg:mb-0">
                 <a
                   href="#"
-                  className="text-[#057FE4] text-[16px] lg:text-[20px] font-black leading-[24px]"
+                  className="text-white text-[16px] lg:text-[20px] font-black leading-[24px] bg-[#057FE4] max-w-fit p-[15px] rounded-[4px] hidden lg:block"
+                >
+                  Оставить заявку
+                </a>
+                <a
+                  href="#"
+                  className="text-[#057FE4] text-[16px] lg:text-[20px] font-black leading-[24px] lg:hidden"
                 >
                   Оставить заявку
                 </a>

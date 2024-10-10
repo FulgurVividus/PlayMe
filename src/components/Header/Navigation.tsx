@@ -28,7 +28,7 @@ const Navigation: React.FC = () => {
           {/* TODO: Make the button functional */}
           <button
             title="button"
-            className="py-[8px] px-[18px] rounded-md bg-white hidden md:block hover:opacity-90 duration-75"
+            className="py-[8px] px-[18px] rounded-md bg-white hidden lg:block hover:opacity-90 duration-75"
           >
             <span className="leading-[28px] text-black font-black font-inter">
               Демо версия

@@ -80,7 +80,6 @@ const Footer: React.FC = () => {
 
               <div className="flex items-center gap-x-2.5">
                 <a href="https://t.me/playmeedu" target="_blank">
-                  {/* TODO: Change image */}
                   <img
                     loading="lazy"
                     src={telegram}
@@ -105,7 +104,7 @@ const Footer: React.FC = () => {
             </div>
 
             {/* Rights div */}
-            <div className="text-center mt-[38px]">
+            <div className="text-left mt-[38px]">
               <p className="font-black text-[14px] leading-[19px]">
                 © {new Date().getFullYear()} PLAYME - Все права защищены
               </p>

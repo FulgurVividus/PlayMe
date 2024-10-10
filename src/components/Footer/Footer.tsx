@@ -104,7 +104,7 @@ const Footer: React.FC = () => {
             </div>
 
             {/* Rights div */}
-            <div className="text-left mt-[38px]">
+            <div className="text-center lg:text-left mt-[38px]">
               <p className="font-black text-[14px] leading-[19px]">
                 © {new Date().getFullYear()} PLAYME - Все права защищены
               </p>

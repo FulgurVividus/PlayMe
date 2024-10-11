@@ -29,6 +29,34 @@
     @apply text-[#5C5E6A] font-black text-base leading-[24px];
   }
 
+  .tab-box-1 {
+    @apply flex flex-col items-start py-[14px] px-[18px] border-[2px] rounded-2xl w-full;
+  }
+
+  .tab-box-1-text {
+    @apply mx-auto py-[22px] lg:py-11 font-inter font-medium text-[#18181D];
+  }
+
+  .active-content {
+    @apply block;
+  }
+
+  .tabs {
+    @apply rounded bg-[#E4E4E4] w-[49px] h-[4px];
+  }
+
+  .active-tabs-active {
+    @apply bg-[#5893f1];
+  }
+
+  .continue-button-form {
+    @apply bg-[#057FE4] py-[12px] px-[32px] rounded-[4px] shadow-[#057FE4] shadow-md;
+  }
+
+  .send-button-form {
+    @apply bg-[#057FE4] py-[12px] px-[32px] rounded-[4px] shadow-[#057FE4] shadow-md;
+  }
+
   /* hide scrollbar */
   html {
     overflow: scroll;

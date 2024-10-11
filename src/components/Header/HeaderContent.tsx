@@ -41,7 +41,7 @@ const HeaderContent: React.FC = () => {
           {/* TODO: Make the button functional */}
           {/* 3: Three bars */}
           <div className="flex flex-col gap-3">
-            <a href="#" className="headerLinkBars">
+            <a href="#form" className="headerLinkBars">
               <img
                 loading="lazy"
                 src={imageHeader3}

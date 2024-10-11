@@ -49,42 +49,6 @@ const upperCards: {
     ],
   },
   {
-    id: "03",
-    img: upper3,
-    title: "Посещаемость",
-    tick: tick,
-    bulletPoints: [
-      "Списки и профили детей",
-      "Заезд и выезд детей",
-      "Расписание занятий детей",
-      "Цифровые подписи",
-      "Отслеживание соотношения",
-      "Отчеты о посещаемости",
-    ],
-  },
-  {
-    id: "04",
-    img: upper4,
-    title: "Операции и отчетность",
-    tick: tick,
-    bulletPoints: [
-      "Пользовательские формы и управление",
-      "Загрузка документов",
-      "Меню и отслеживание CACFP",
-      "Настраиваемая отчетность",
-      "Лицензирование",
-    ],
-  },
-];
-
-const lowerCards: {
-  id: string;
-  img: string;
-  title: string;
-  tick: string;
-  bulletPoints: string[];
-}[] = [
-  {
     id: "05",
     img: lower1,
     title: "Обучение",
@@ -97,6 +61,15 @@ const lowerCards: {
       "Государственные стандарты",
     ],
   },
+];
+
+const lowerCards: {
+  id: string;
+  img: string;
+  title: string;
+  tick: string;
+  bulletPoints: string[];
+}[] = [
   {
     id: "06",
     img: lower2,
@@ -160,9 +133,12 @@ const FeatureList: React.FC = () => {
           </h3>
 
           {/* Main div for cards */}
-          <div className="shadow-md shadow-gray-500 rounded-[20px] flex flex-col justify-center">
+          <div
+            className="shadow-md shadow-gray-500 rounded-[20px] flex flex-col justify-center 
+            mt-[8px] lg:mt-[35px]"
+          >
             {/* Upper cards */}
-            <div className="mx-[27px] lg:mx-[30px] pt-[42px] lg:pt-[34px]">
+            <div className="px-[27px] lg:px-[40px] pt-[23px] lg:pt-[34px]">
               <ul className="flex flex-col lg:flex-row justify-between">
                 {upperCards.map((upperCard) => (
                   <li
@@ -202,7 +178,7 @@ const FeatureList: React.FC = () => {
 
             {/* Lower cards */}
             <div className="mx-auto px-[27px] lg:px-0 mt-[0px] lg:mt-[94px] pb-[23px] lg:pb-[113px]">
-              <ul className="flex flex-col lg:flex-row justify-evenly">
+              <ul className="flex flex-col lg:flex-row justify-between lg:gap-x-[60px]">
                 {lowerCards.map((lowerCard) => (
                   <li
                     key={lowerCard.id}

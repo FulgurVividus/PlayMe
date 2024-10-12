@@ -70,7 +70,6 @@ const Partnership: React.FC = () => {
                 </ol>
               </div>
 
-              {/* TODO: Make the link functional */}
               <div className="mt-7 lg:mt-[108px] mb-8 lg:mb-0">
                 <a
                   href="#form"

@@ -25,15 +25,14 @@ const Navigation: React.FC = () => {
             </span>
           </a>
 
-          {/* TODO: Make the button functional */}
-          <button
-            title="button"
+          <a
+            href="#form"
             className="py-[8px] px-[18px] rounded-md bg-white hidden lg:block hover:opacity-90 duration-75"
           >
             <span className="leading-[28px] text-black font-black font-inter">
               Демо версия
             </span>
-          </button>
+          </a>
         </div>
       </nav>
     </>

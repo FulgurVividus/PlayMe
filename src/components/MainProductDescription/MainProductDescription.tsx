@@ -75,9 +75,8 @@ const MainProductDescription: React.FC = () => {
                 ))}
               </ol>
 
-              {/* TODO: Make the link functional */}
               <a
-                href="#"
+                href="#form"
                 className="mt-[30px] px-[18px] text-white bg-[#057FE4] max-w-fit p-[15px] rounded-[4px] hidden lg:block"
               >
                 <span className="font-inter text-[17px] leading-[25px] font-medium">
@@ -85,7 +84,7 @@ const MainProductDescription: React.FC = () => {
                 </span>
               </a>
               <a
-                href="#"
+                href="#form"
                 className="flex items-center gap-x-3 mt-[30px] px-[18px] lg:hidden"
               >
                 <span className="font-inter text-[17px] leading-[25px] font-medium text-[#057FE4]">

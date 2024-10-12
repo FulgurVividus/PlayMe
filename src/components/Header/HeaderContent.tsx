@@ -38,8 +38,7 @@ const HeaderContent: React.FC = () => {
             В первую очередь, раскажите о себе !
           </h6>
 
-          {/* TODO: Make the button functional */}
-          {/* 3: Three bars */}
+          {/* 3: One bar */}
           <div className="flex flex-col gap-3">
             <a href="#form" className="headerLinkBars">
               <img

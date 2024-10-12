@@ -83,7 +83,7 @@ const CallToAction: React.FC = () => {
 
             {/* Main div for quiz */}
             {isSubmitted === false ? (
-              <div className="mt-8 lg:mt-12 bg-[#FFFFFF] py-[33px] px-[43px]">
+              <div className="mt-8 lg:mt-12 bg-[#FFFFFF] py-[33px] px-[43px] rounded-lg">
                 <div className="flex flex-col items-center justify-center gap-3 mb-[20px]">
                   <div className="flex items-center gap-1">
                     <div
@@ -122,11 +122,11 @@ const CallToAction: React.FC = () => {
                               type="radio"
                               id="Number1"
                               name="NumberOfKids"
-                              value="0-50"
+                              value="0-20"
                               onChange={(e) => setNumberOfKids(e.target.value)}
                             />
                             <label htmlFor="Number1" className="tab-box-1-text">
-                              0-50
+                              0-20
                             </label>
                           </div>
                           <div className="tab-box-1">
@@ -134,11 +134,11 @@ const CallToAction: React.FC = () => {
                               type="radio"
                               id="Number2"
                               name="NumberOfKids"
-                              value="50-100"
+                              value="20-50"
                               onChange={(e) => setNumberOfKids(e.target.value)}
                             />
                             <label htmlFor="Number2" className="tab-box-1-text">
-                              50-100
+                              20-50
                             </label>
                           </div>
                           <div className="tab-box-1">
@@ -146,10 +146,22 @@ const CallToAction: React.FC = () => {
                               type="radio"
                               id="Number3"
                               name="NumberOfKids"
-                              value="100+"
+                              value="50-100"
                               onChange={(e) => setNumberOfKids(e.target.value)}
                             />
                             <label htmlFor="Number3" className="tab-box-1-text">
+                              50-100
+                            </label>
+                          </div>
+                          <div className="tab-box-1">
+                            <input
+                              type="radio"
+                              id="Number4"
+                              name="NumberOfKids"
+                              value="100+"
+                              onChange={(e) => setNumberOfKids(e.target.value)}
+                            />
+                            <label htmlFor="Number4" className="tab-box-1-text">
                               100+
                             </label>
                           </div>
@@ -197,13 +209,13 @@ const CallToAction: React.FC = () => {
                             htmlFor="Name"
                             className="text-[#666666] font-semibold"
                           >
-                            Имя
+                            Название детского сада
                           </label>
                           <input
                             type="text"
                             id="Name"
                             name="Name"
-                            placeholder="Ваше имя"
+                            placeholder="Название"
                             className="outline-none font-normal text-[16px] p-[16px] border-[1px] rounded-[8px] text-[#666666]"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
@@ -276,7 +288,7 @@ const CallToAction: React.FC = () => {
                 </form>
               </div>
             ) : (
-              <div className="mt-8 lg:mt-12 bg-[#FFFFFF] py-[33px] px-[43px] flex justify-center items-center">
+              <div className="mt-8 lg:mt-12 bg-[#FFFFFF] py-[33px] px-[43px] flex justify-center items-center rounded-lg">
                 <h2 className="text-center text-[#18181D] text-[30px] font-medium leading-[56px]">
                   Спасибо за заявку!
                   <br />

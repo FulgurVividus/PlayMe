@@ -5,7 +5,7 @@ import headerLogo from "../../assets/images/header-images/headerLogo.jpg";
 const Navigation: React.FC = () => {
   return (
     <>
-      <nav className="py-2.5 flex justify-between items-center custom-container">
+      <nav className="py-2.5 flex flex-col lg:flex-row gap-y-3 lg:gap-y-0 justify-between custom-container">
         <img
           loading="lazy"
           src={headerLogo}

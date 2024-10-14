@@ -4,8 +4,6 @@ import { motion, useInView, useAnimation } from "framer-motion";
 
 import upper1 from "../../assets/images/featureList-images/upper1.png";
 import upper2 from "../../assets/images/featureList-images/upper2.png";
-import upper3 from "../../assets/images/featureList-images/upper3.png";
-import upper4 from "../../assets/images/featureList-images/upper4.png";
 
 import lower1 from "../../assets/images/featureList-images/lower1.png";
 import lower2 from "../../assets/images/featureList-images/lower2.png";
@@ -117,7 +115,7 @@ const FeatureList: React.FC = () => {
     <>
       <section
         ref={ref}
-        className="mt-12 lg:mt-[104px] custom-container flex flex-col gap-y-2 lg:gap-y-8 px-[28px] lg:px-0 lg:w-[1160px]"
+        className="mt-12 lg:mt-[104px] custom-container flex flex-col gap-y-2 lg:gap-y-8 px-[28px] lg:px-0 lg:w-[1160px] max-w-fit"
       >
         <motion.div
           variants={{
@@ -177,7 +175,7 @@ const FeatureList: React.FC = () => {
             </div>
 
             {/* Lower cards */}
-            <div className="mx-auto px-[27px] lg:px-0 mt-[0px] lg:mt-[94px] pb-[23px] lg:pb-[113px]">
+            <div className="lg:mx-auto px-[27px] lg:px-0 mt-[0px] lg:mt-[94px] pb-[23px] lg:pb-[113px]">
               <ul className="flex flex-col lg:flex-row justify-between lg:gap-x-[60px]">
                 {lowerCards.map((lowerCard) => (
                   <li

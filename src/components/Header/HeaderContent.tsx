@@ -2,10 +2,9 @@ import React from "react";
 
 import stick from "../../assets/images/header-images/stick.png";
 import arrow from "../../assets/images/header-images/arrow.png";
-import imageHeader1 from "../../assets/images/header-images/imageHeader1.png";
-import imageHeader2 from "../../assets/images/header-images/imageHeader2.png";
 import imageHeader3 from "../../assets/images/header-images/imageHeader3.png";
 import headerRightImage from "../../assets/images/header-images/headerRightImage.webm.png";
+import headerRightImage2 from "../../assets/images/header-images/headerRightImageNew.png";
 
 const HeaderContent: React.FC = () => {
   return (
@@ -73,12 +72,19 @@ const HeaderContent: React.FC = () => {
 
         {/* Div for image on the right */}
         <div>
-          <img
+          {/* <img
             loading="lazy"
             src={headerRightImage}
             alt="headerRightImage"
             title="image"
-            className="absolute bottom-0 right-0 select-none hidden lg:block h-full w-fit"
+            className="absolute bottom-0 right-0 select-none hidden lg:block h-full w-fit z-10"
+          /> */}
+          <img
+            loading="lazy"
+            src={headerRightImage2}
+            alt="headerRightImage2"
+            title="image"
+            className="absolute bottom-[-25.6px] right-0 select-none hidden lg:block h-full"
           />
         </div>
       </header>
